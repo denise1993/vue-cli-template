@@ -1,14 +1,13 @@
 module.exports = (api, options) => {
-  //package.js
   api.extendPackage({
     scripts: {
       serve: "vue-cli-service serve",
       build: "vue-cli-service build",
-      lint: "vue-cli-service lint",
+      lint: "vue-cli-service lint"
     },
     dependencies: {
       "core-js": "^3.3.2",
-      vue: "^2.6.10",
+      vue: "^2.6.10"
     },
     devDependencies: {
       "@vue/cli-plugin-babel": "^4.0.0",
@@ -19,20 +18,14 @@ module.exports = (api, options) => {
       eslint: "^5.16.0",
       "eslint-plugin-vue": "^5.0.0",
       "lint-staged": "^9.4.2",
-      "vue-template-compiler": "^2.6.10",
+      "vue-template-compiler": "^2.6.10"
     },
     gitHooks: {
-      "pre-commit": "lint-staged",
+      "pre-commit": "lint-staged"
     },
     "lint-staged": {
-      "*.{js,vue}": ["vue-cli-service lint", "git add"],
-    },
+      "*.{js,vue}": ["vue-cli-service lint", "git add"]
+    }
   });
-  //files
   api.render("./template");
-  /*
-  template file
-  開頭. 要改成 _
-  開頭_ 要改成 __
-  */
 };
