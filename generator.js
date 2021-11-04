@@ -30,4 +30,9 @@ module.exports = (api, options) => {
   });
   //files
   api.render("./template");
+  /*
+  template file
+  開頭. 要改成 _
+  開頭_ 要改成 __
+  */
 };
